@@ -1,0 +1,28 @@
+{
+    "project_name": "",
+    "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_description": "{{cookiecutter.project_name}}",
+    "initial_version": "0.0.1",
+    "github_name": "{{ cookiecutter.module_name.replace('_', '-') }}",
+    "github_user": "mattsb42",
+    "pypi_name": "{{cookiecutter.github_name}}",
+    "default_python": "3.7",
+    "supported_modern_python_versions": "3.6 3.7",
+    "author": "Matt Bullock",
+    "author_email": "m@ttsb42.com",
+    "pypi_keywords": "{{cookiecutter.pypi_name}} {{cookiecutter.module_name}}",
+    "development_status": [
+        "1 - Planning",
+        "2 - Pre-Alpha",
+        "3 - Alpha",
+        "4 - Beta",
+        "5 - Production/Stable",
+        "6 - Mature",
+        "7 - Inactive"
+    ],
+    "licence": ["Apache 2.0"],
+    "versioning_policy": ["SemVer"],
+    "derived": {
+        "github_url": "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.github_name}}"
+    }
+}
