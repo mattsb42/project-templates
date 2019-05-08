@@ -20,7 +20,7 @@
         "6 - Mature",
         "7 - Inactive"
     ],
-    "licence": ["Apache 2.0"],
+    "license": ["Apache 2.0"],
     "versioning_policy": ["SemVer"],
     "derived": {
         "github_url": "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.github_name}}"
