@@ -55,7 +55,7 @@ setup(
     long_description=read("README.rst"),
     keywords="{{cookiecutter.pypi_keywords}}",
     data_files=["README.rst", "CHANGELOG.rst", "LICENSE", "requirements.txt"],
-    licence="{{cookiecutter.license}}",
+    license="{{cookiecutter.license}}",
     install_requires=install_requires,
     dependency_links=dependency_links,
     classifiers=[
