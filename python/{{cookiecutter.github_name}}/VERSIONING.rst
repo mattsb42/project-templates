@@ -4,7 +4,7 @@ Versioning
 
 {{cookiecutter.project_name}} releases follow `
 {%- if cookiecutter.versioning_policy == "SemVer" -%}
-_Semantic Versioning
+Semantic Versioning
 {%- endif %}`_.
 
 
