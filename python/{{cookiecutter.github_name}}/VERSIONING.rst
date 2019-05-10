@@ -8,6 +8,6 @@ Semantic Versioning
 {%- endif %}`_.
 
 
-{%- if cookiecutter.versioning_policy == "SemVer" %}
+{% if cookiecutter.versioning_policy == "SemVer" %}
 .. _Semantic Versioning: https://semver.org
 {%- endif -%}
