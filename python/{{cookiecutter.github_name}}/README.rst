@@ -26,4 +26,8 @@
    :target: https://ci.appveyor.com/project/REPLACEME
    :alt: AppVeyor Test Status
 
+.. important::
+
+    This project is a work in progress and is not yet ready for use.
+
 {{cookiecutter.project_description}}
