@@ -10,4 +10,4 @@ Semantic Versioning
 
 {% if cookiecutter.versioning_policy == "SemVer" %}
 .. _Semantic Versioning: https://semver.org
-{%- endif -%}
+{%- endif %}
