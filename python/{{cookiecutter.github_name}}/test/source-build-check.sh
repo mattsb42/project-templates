@@ -7,9 +7,9 @@ WORKINGDIR=$1
 DISTDIR=$2
 
 echo "Locating the source build and copying it into the working directory."
-DISTFILE=`ls $DISTDIR/pipeformer-*.tar.gz | tail -1`
+DISTFILE=`ls $DISTDIR/{{cookiecutter.pypi_name}}-*.tar.gz | tail -1`
 cp $DISTFILE $WORKINGDIR
-DISTFILE=`ls $WORKINGDIR/pipeformer-*.tar.gz | tail -1`
+DISTFILE=`ls $WORKINGDIR/{{cookiecutter.pypi_name}}-*.tar.gz | tail -1`
 
 echo "Extracting the source build."
 cd $WORKINGDIR
@@ -23,4 +23,4 @@ pip install -r test/requirements.txt
 pip install -e .
 
 echo "Running tests from extracted source build."
-pytest --cov pipeformer -m local
+pytest --cov {{cookiecutter.module_name}} -m local
