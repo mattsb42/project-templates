@@ -40,7 +40,7 @@ def get_requireemnts():
     return requirements, dependencies
 
 
-install_requires, dependency_links = get_requireemnts()
+INSTALL_REQUIRES, DEPENDENCY_LINKS = get_requireemnts()
 
 setup(
     name="{{cookiecutter.pypi_name}}",
@@ -56,8 +56,8 @@ setup(
     keywords="{{cookiecutter.pypi_keywords}}",
     data_files=["README.rst", "CHANGELOG.rst", "LICENSE", "requirements.txt"],
     license="{{cookiecutter.license}}",
-    install_requires=install_requires,
-    dependency_links=dependency_links,
+    install_requires=INSTALL_REQUIRES,
+    dependency_links=DEPENDENCY_LINKS,
     classifiers=[
         "Development Status :: {{cookiecutter.development_status}}",
         "Intended Audience :: Developers",
