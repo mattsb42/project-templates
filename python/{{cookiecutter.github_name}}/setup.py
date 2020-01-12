@@ -20,7 +20,7 @@ def get_version():
     return VERSION_RE.search(init).group(1)
 
 
-def get_requireemnts():
+def get_requirements():
     """Read the requirements file."""
     raw_requirements = read("requirements.txt")
     requirements = []
@@ -30,9 +30,11 @@ def get_requireemnts():
         req = req.strip()
         if not req:
             continue
-        elif req.startswith("#"):
+
+        if req.startswith("#"):
             continue
-        elif "+" in req:
+
+        if "+" in req:
             dependencies.append(req)
         else:
             requirements.append(req)
@@ -40,7 +42,7 @@ def get_requireemnts():
     return requirements, dependencies
 
 
-INSTALL_REQUIRES, DEPENDENCY_LINKS = get_requireemnts()
+INSTALL_REQUIRES, DEPENDENCY_LINKS = get_requirements()
 
 setup(
     name="{{cookiecutter.pypi_name}}",
