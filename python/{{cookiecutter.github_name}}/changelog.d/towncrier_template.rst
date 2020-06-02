@@ -1,3 +1,4 @@
+{% raw -%}
 {% for section, _ in sections.items() %}
 {% set underline = underlines[0] %}{% if section %}{{section}}
 {{ underline * section|length }}{% set underline = underlines[1] %}
@@ -32,3 +33,4 @@ No significant changes.
 
 {% endif %}
 {% endfor %}
+{%- endraw %}
