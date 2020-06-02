@@ -16,10 +16,4 @@ API
 
    lib/api/index
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Informational Only
-
-   lib/internal
-
 .. include:: ../CHANGELOG.rst
