@@ -18,14 +18,6 @@
    :target: https://{{cookiecutter.pypi_name}}.readthedocs.io/en/stable/
    :alt: Documentation Status
 
-.. image:: https://travis-ci.org/{{cookiecutter.github_name}}/{{cookiecutter.pypi_name}}.svg?branch=master
-   :target: https://travis-ci.org/{{cookiecutter.github_name}}/{{cookiecutter.pypi_name}}
-   :alt: Travis CI Test Status
-
-.. image:: https://ci.appveyor.com/api/projects/status/REPLACEME/branch/master?svg=true
-   :target: https://ci.appveyor.com/project/REPLACEME
-   :alt: AppVeyor Test Status
-
 .. important::
 
     This project is a work in progress and is not yet ready for use.
